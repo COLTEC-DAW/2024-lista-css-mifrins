@@ -21,12 +21,13 @@ abbr{
     font-variant: small-caps;
 }
 
-a{
+a:link{
     color: #8ec61d;
+    font-weight: bold;
 }
-
 a:visited{
     color: #437115;
+    font-weight: normal !important;
 }
 
 h1, h2, h3{
@@ -60,6 +61,15 @@ h3{
 
 #zen-supporting{
     line-height: 1.5;
+}
+
+.explanation p:first-of-type::first-letter{
+    font-family: cursive;
+    float: left;
+    font-size: 3em;
+}
+.explanation p:first-of-type{
+    text-indent: 0.6em;
 }
 
 .explanation{
@@ -115,7 +125,15 @@ li{
 #design-selection{
     font-size: 0.85em;
     position: absolute;
-    top: 650px;
+    top: 570px;
     left:60%;
     padding: 2%;
+}
+#design-selection li{
+    border-top: #1f295c 1px solid;
+    padding-top: 15px;
+}
+#design-selection li:last-of-type{
+    border-bottom: #1f295c 1px solid;
+    padding-bottom: 15px;
 }
